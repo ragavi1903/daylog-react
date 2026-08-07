@@ -1,0 +1,94 @@
+.weekly-summary{
+
+    margin:40px 60px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.weekly-summary h2{
+
+    margin-bottom:25px;
+
+}
+
+.summary-grid{
+
+   display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+.summary-grid div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 22px;
+
+    background:#f7f7f7;
+    border-radius:14px;
+}
+
+.summary-grid h3{
+    margin:0;
+    color:#666;
+    font-size:18px;
+}
+
+.summary-grid p{
+    margin:0;
+    font-size:26px;
+    font-weight:700;
+    color:#173126;
+}
+
+@media(max-width:900px){
+
+.summary-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.summary-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+@media(max-width:768px){
+
+.weekly-summary{
+
+margin:20px;
+
+padding:20px;
+
+}
+
+.summary-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.summary-grid p{
+
+font-size:24px;
+
+}
+
+}

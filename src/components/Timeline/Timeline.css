@@ -1,0 +1,172 @@
+.timeline {
+    padding: 50px 40px;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.timeline-subtitle {
+    color: #7a7a7a;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.timeline h2 {
+    font-size: 36px;
+    margin-top: 8px;
+    color: var(--text-color);
+}
+
+.finish-btn {
+    background: #173126;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.finish-btn:hover {
+    background: #2b4c3f;
+    transform: translateY(-2px);
+}
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+    transition: all .3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+.time {
+    width: 180px;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #315442;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.activity h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.activity span {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.edit-btn {
+    background: #eef3f0;
+    color: #173126;
+}
+
+.edit-btn:hover {
+    background: #173126;
+    color: white;
+}
+
+.delete-btn {
+    background: #ffeaea;
+    color: #c62828;
+}
+
+.delete-btn:hover {
+    background: #c62828;
+    color: white;
+}
+
+.empty-timeline {
+    text-align: center;
+    padding: 70px 20px;
+    background: var(--card-bg);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+}
+
+.clock-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.empty-timeline h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.empty-timeline p {
+    color: var(--text-light);
+}
+.category-badge{
+    display:inline-block;
+    margin-top:5px;
+    padding:5px 12px;
+    background:#eef6f1;
+    color:#173126;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.duration{
+    margin-top:8px;
+    color:#6B7280;
+    font-size:14px;
+}
+
+.productivity{
+    margin-top:6px;
+    color:#f4b400;
+    font-size:18px;
+    letter-spacing:2px;
+}

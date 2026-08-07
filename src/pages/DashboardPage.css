@@ -1,0 +1,33 @@
+.dashboard-charts{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:24px;
+
+margin:30px 60px;
+
+}
+
+@media(max-width:992px){
+
+.dashboard-charts{
+
+grid-template-columns:1fr;
+
+margin:30px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.dashboard-charts{
+
+margin:20px;
+
+}
+
+}

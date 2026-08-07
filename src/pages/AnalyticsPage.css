@@ -1,0 +1,193 @@
+.analytics-page{
+
+padding:30px;
+
+}
+
+.analytics-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.analytics-header h1{
+
+font-size:34px;
+
+color:var(--text-secondary);
+
+}
+
+.analytics-header select{
+
+padding:10px 15px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+}
+
+.analytics-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:25px;
+
+}
+
+.chart-box{
+
+background:var(--card-color);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+min-height:420px;
+
+}
+
+.insight-box{
+
+margin-top:25px;
+
+background:var(--card-color);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+/* ================= Desktop ================= */
+
+.analytics-page{
+    padding:30px;
+}
+
+.analytics-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    gap:20px;
+}
+
+.analytics-header h1{
+    font-size:34px;
+    color:var(--text-secondary);
+}
+
+.analytics-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.chart-box{
+    background:var(--card-color);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    min-height:420px;
+    overflow:hidden;
+}
+
+.chart-box h2{
+    margin-bottom:20px;
+}
+
+.insight-box{
+    margin-top:25px;
+    background:var(--card-color);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.insights-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.insights-list p{
+    font-size:17px;
+    margin:0;
+    padding:12px 16px;
+    background:rgba(0,0,0,.04);
+    border-radius:12px;
+}
+
+/* ================= Tablet ================= */
+
+@media(max-width:992px){
+
+.analytics-page{
+    padding:20px;
+}
+
+.analytics-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.analytics-header h1{
+    font-size:30px;
+}
+
+.analytics-grid{
+    grid-template-columns:1fr;
+}
+
+.chart-box{
+    min-height:360px;
+}
+
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:600px){
+
+.analytics-page{
+    padding:15px;
+}
+
+.analytics-header h1{
+    font-size:26px;
+}
+
+.chart-box,
+.insight-box{
+    padding:18px;
+}
+
+.chart-box{
+    min-height:320px;
+}
+
+.chart-box h2{
+    font-size:20px;
+}
+
+.insights-list p{
+    font-size:15px;
+}
+
+}

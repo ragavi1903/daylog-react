@@ -1,0 +1,83 @@
+:root{
+     --bg-color:#F7F6F1;
+    --card-color: #e5e7eb;
+
+    /* --text-color:#173126; */
+    /* --text-secondary:#6b7280; */
+     --text-light:#9ca3af; 
+
+    --primary:#315442;
+    --border-color:#e5e7eb; 
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Manrope",sans-serif;
+
+    background:#F7F6F1;
+
+   color:var(--text-secondary);
+
+}
+
+button{
+
+    font-family:"Manrope",sans-serif;
+
+}
+
+input,
+select{
+
+    font-family:"Manrope",sans-serif;
+
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+small,
+li{
+    color:var(--text-color);
+}
+
+body.dark .profile-dropdown{
+
+    background:#1e293b;
+
+}
+
+body.dark .profile-dropdown button{
+
+    color:white;
+
+}
+
+body.dark .profile-dropdown button:hover{
+
+    background:#334155;
+
+}
+
+body.dark .profile-header p{
+
+    color:#cbd5e1;
+
+}

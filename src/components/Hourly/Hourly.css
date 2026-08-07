@@ -1,0 +1,126 @@
+.hourly{
+
+    margin:40px;
+
+    background:#d9f36b;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.hourly-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:15px;
+
+    background:#173126;
+
+    color:#d9f36b;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+}
+
+.hourly-title{
+
+    letter-spacing:2px;
+
+    color:#4b5b46;
+
+    font-size:13px;
+
+}
+
+.hourly h2{
+
+    margin:8px 0;
+
+    color:var(--text-secondary);
+
+}
+
+.hourly-text{
+
+    color:#4b5b46;
+
+}
+
+.log-button{
+
+    padding:16px 30px;
+
+    background:#173126;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.log-button:hover{
+
+    background:#244738;
+
+}
+@media(max-width:768px){
+
+.hourly{
+
+margin:20px;
+
+padding:20px;
+
+flex-direction:column;
+
+text-align:center;
+
+gap:25px;
+
+}
+
+.hourly-left{
+
+flex-direction:column;
+
+}
+
+.log-button{
+
+width:100%;
+
+}
+
+}

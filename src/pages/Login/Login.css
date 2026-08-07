@@ -1,0 +1,151 @@
+.login-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.login-left {
+  background: #173126;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.brand p {
+  margin-top: 8px;
+  color: #d9f36b;
+  font-weight: 600;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin: 40px 0 15px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  color: #d6e2da;
+  line-height: 1.6;
+}
+
+.features {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.feature span {
+  font-size: 28px;
+}
+
+.feature p {
+  margin: 0;
+  color: #d6e2da;
+}
+
+.login-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-card h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color:var(--text-secondary);
+}
+
+.login-card p {
+ color:var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+ color:var(--text-secondary);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.input-group input:focus {
+  border-color: #173126;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(23, 49, 38, 0.1);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 15px;
+  background: #173126;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login-card button:hover {
+  background: #0f2218;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-left {
+    padding: 40px 30px;
+  }
+
+  .login-right {
+    padding: 40px 30px;
+  }
+}

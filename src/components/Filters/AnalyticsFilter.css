@@ -1,0 +1,43 @@
+.analytics-filter{
+
+display:flex;
+
+gap:12px;
+
+margin:20px 0 30px;
+
+flex-wrap:wrap;
+
+}
+
+.analytics-filter button{
+
+padding:10px 18px;
+
+border:none;
+
+border-radius:30px;
+
+background:#edf2f7;
+
+cursor:pointer;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.analytics-filter button:hover{
+
+background:#d9f36b;
+
+}
+
+.analytics-filter button.active{
+
+background:#173126;
+
+color:white;
+
+}
