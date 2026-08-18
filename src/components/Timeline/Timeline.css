@@ -1,6 +1,51 @@
 .timeline {
     padding: 50px 40px;
 }
+@media (max-width: 768px) {
+
+    .timeline {
+        padding: 25px 15px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .timeline h2 {
+        font-size: 28px;
+    }
+
+    .finish-btn {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .time {
+        width: auto;
+    }
+
+    .activity {
+        width: 100%;
+    }
+
+    .actions {
+        width: 100%;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        flex: 1;
+    }
+}
 
 .timeline-header {
     display: flex;
@@ -10,7 +55,7 @@
 }
 
 .timeline-subtitle {
-    color: #7a7a7a;
+    color: var(--text-light);
     letter-spacing: 2px;
     font-size: 13px;
     text-transform: uppercase;
@@ -23,8 +68,8 @@
 }
 
 .finish-btn {
-    background: #173126;
-    color: white;
+     background: var(--primary);
+  color: #173126;
     border: none;
     border-radius: 12px;
     padding: 12px 22px;
@@ -48,7 +93,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--card-bg);
+    background: var(--card-color);
+  color: var(--text-color);
     padding: 22px;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,.05);
@@ -60,6 +106,9 @@
     box-shadow: 0 12px 28px rgba(0,0,0,.12);
 }
 
+body.dark .timeline-item {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
 .time {
     width: 180px;
     font-weight: 600;
@@ -107,18 +156,24 @@
 }
 
 .edit-btn {
-    background: #eef3f0;
-    color: #173126;
+   background: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }
 
 .edit-btn:hover {
-    background: #173126;
-    color: white;
+     background: var(--hover-bg);
+    color: var(--text-color);
 }
 
 .delete-btn {
-    background: #ffeaea;
-    color: #c62828;
+   background: #fee2e2;
+  color: #dc2626;
+  border: none;
+}
+body.dark .delete-btn {
+  background: #451a1a;
+  color: #fca5a5;
 }
 
 .delete-btn:hover {
@@ -129,7 +184,7 @@
 .empty-timeline {
     text-align: center;
     padding: 70px 20px;
-    background: var(--card-bg);
+    background:var(--card-color);
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,.05);
 }
@@ -151,8 +206,8 @@
     display:inline-block;
     margin-top:5px;
     padding:5px 12px;
-    background:#eef6f1;
-    color:#173126;
+    background: var(--hover-bg);
+    color: var(--text-color);
     border-radius:20px;
     font-size:13px;
     font-weight:600;
@@ -160,7 +215,7 @@
 
 .duration{
     margin-top:8px;
-    color:#6B7280;
+    color: var(--text-light);
     font-size:14px;
 }
 
@@ -169,4 +224,19 @@
     color:#f4b400;
     font-size:18px;
     letter-spacing:2px;
+}
+
+/* body.dark .category-badge{
+  background: #334155;
+  color: #e2e8f0;
+} */
+
+body.dark .duration {
+  background: #422006;
+  color: #fdba74;
+}
+
+body.dark .rating {
+  background: #422006;
+  color: #facc15;
 }

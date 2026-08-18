@@ -1,138 +1,160 @@
-.settings-page{
-    padding:30px;
+.settings-page {
+    padding: 30px 40px;
 }
 
-.settings-page h1{
-    color:inherit;
-    margin-bottom:25px;
+.settings-page h1 {
+    color: inherit;
+    margin-bottom: 25px;
 }
 
-.settings-card{
-    background:var(--card-color);
-    padding:25px;
-    border-radius:20px;
-    margin-bottom:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,.05);
+.settings-card {
+    background: var(--card-color);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
 }
 
-.settings-card h2{
-    color:inherit;
-}
-
-.settings-btn,
-.danger-btn{
-    display:block;
-    width:250px;
-    padding:14px;
-    border:none;
-    border-radius:12px;
-    margin-bottom:15px;
-    cursor:pointer;
-    font-size:16px;
-    transition:.3s;
-}
-
-.settings-btn{
-    background:#173126;
-    color:white;
-}
-
-.settings-btn:hover{
-    background:#264638;
-}
-
-.danger-btn{
-    background:#dc3545;
-    color:white;
-}
-
-.danger-btn:hover{
-    background:#b52b38;
-}
-/* ================= Tablet ================= */
-
-@media(max-width:992px){
-
-.settings-page{
-
-    padding:20px;
-
-}
-
-.settings-card{
-
-    padding:20px;
-
+.settings-card h2 {
+    color: inherit;
 }
 
 .settings-btn,
-.danger-btn{
-
-    width:100%;
-
+.danger-btn {
+    display: block;
+    width: 250px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
 }
 
-.theme-toggle{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    max-width:320px;
-    width:100%;
-
-    margin-top:15px;
-
+.settings-btn {
+    background: #173126;
+    color: white;
 }
 
+.settings-btn:hover {
+    background: #264638;
 }
 
-/* ================= Mobile ================= */
-
-@media(max-width:600px){
-
-.settings-page{
-
-    padding:15px;
-
+.danger-btn {
+    background: #dc3545;
+    color: white;
 }
 
-.settings-page h1{
-
-    font-size:28px;
-
+.danger-btn:hover {
+    background: #b52b38;
 }
 
-.settings-card{
 
-    padding:18px;
+/* =========================
+   TABLET
+========================= */
 
+@media (max-width: 992px) {
+
+    .settings-page {
+        padding: 25px;
+    }
+
+    .settings-card {
+        padding: 22px;
+        margin-bottom: 20px;
+    }
+
+    .settings-btn,
+    .danger-btn {
+        width: 100%;
+    }
+
+    .theme-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 15px;
+    }
 }
 
-.settings-card h2{
 
-    font-size:22px;
+/* =========================
+   MOBILE
+========================= */
 
+@media (max-width: 600px) {
+
+    .settings-page {
+        padding: 15px;
+    }
+
+    .settings-page h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .settings-card {
+        padding: 20px;
+        margin-bottom: 18px;
+        border-radius: 18px;
+    }
+
+    .settings-card h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .theme-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+        gap: 12px;
+
+        margin-top: 10px;
+    }
+
+    .settings-btn,
+    .danger-btn {
+        width: 100%;
+        margin-bottom: 12px;
+
+        font-size: 15px;
+        padding: 12px;
+    }
 }
 
-.theme-toggle{
 
-    flex-direction:column;
+/* =========================
+   VERY SMALL MOBILE
+========================= */
 
-    align-items:flex-start;
+@media (max-width: 400px) {
 
-    gap:15px;
+    .settings-page {
+        padding: 12px;
+    }
 
-}
+    .settings-card {
+        padding: 16px;
+        margin-bottom: 15px;
+    }
 
-.settings-btn,
-.danger-btn{
+    .settings-card h2 {
+        font-size: 20px;
+    }
 
-    font-size:15px;
-
-    padding:12px;
-
-}
-
+    .settings-btn,
+    .danger-btn {
+        font-size: 14px;
+        padding: 11px;
+    }
 }
 

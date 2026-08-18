@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import Layout from "./components/Layout/Layout";
 import Login from "./pages/Login/Login";
@@ -13,6 +14,16 @@ import ProtectedRoute from "./components/Auth/ProtectedRoute";
 function App() {
 
   const currentTime = useClock();
+
+
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", darkMode);
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
 
   function enableReminder() {
     alert("Reminder feature coming soon!");
@@ -57,12 +68,18 @@ function App() {
             element={<HistoryPage />}
           />
 
-          <Route
+                    <Route
             path="/settings"
-            element={<SettingsPage />}
+            element={
+              <SettingsPage
+                darkMode={darkMode}
+                setDarkMode={setDarkMode}
+              />
+            }
           />
 
         </Route>
+
 
       </Routes>
 

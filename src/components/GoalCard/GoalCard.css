@@ -2,7 +2,7 @@
 
     margin:30px 60px;
 
-    background:white;
+     background: var(--card-color);
 
     padding:30px;
 
@@ -38,7 +38,7 @@
 
     margin-top:8px;
 
-    color:#173126;
+    color: var(--text-color);
 
 }
 
@@ -48,7 +48,7 @@
 
     font-weight:bold;
 
-    color:#315442;
+    color: var(--primary);
 
 }
 
@@ -58,7 +58,7 @@
 
     height:12px;
 
-    background:#e6e6e6;
+    background: var(--border-color);
 
     border-radius:50px;
 
@@ -82,7 +82,7 @@
 
     font-size:18px;
 
-    color:#555;
+     color: var(--text-light);
 
 }
 .streak{
@@ -91,7 +91,7 @@
 
     font-size:22px;
 
-    color:#173126;
+    color: var(--text-color);
 
     font-weight:600;
 

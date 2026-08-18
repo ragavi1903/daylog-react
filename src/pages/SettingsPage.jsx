@@ -1,12 +1,13 @@
 import "./SettingsPage.css";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { STORAGE_KEY } from "../utils/constants";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { exportDaylogReport } from "../utils/exportPdf";
 
-function SettingsPage() {
+function SettingsPage({ darkMode, setDarkMode }) {
   const [history, setHistory] = useLocalStorage("daylog_history", []);
-const [entries, setEntries] = useLocalStorage(STORAGE_KEY, []);
+  const [entries, setEntries] = useLocalStorage(STORAGE_KEY, []);
+
 
 
   function exportData() {
@@ -30,6 +31,8 @@ const [entries, setEntries] = useLocalStorage(STORAGE_KEY, []);
   URL.revokeObjectURL(url);
 
 }
+
+
 function clearData() {
 
   const confirmDelete = window.confirm(
@@ -56,13 +59,16 @@ function clearData() {
 
       <div className="settings-card">
 
-        {/* <h2>Appearance</h2> */}
-        {/* <button
-  className="settings-btn"
-  disabled
->
-  🌙 Dark Mode (Coming Soon)
-</button> */}
+<div className="settings-card">
+  <h2>Appearance</h2>
+
+  <button
+    className="settings-btn"
+    onClick={() => setDarkMode(!darkMode)}
+  >
+    {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+  </button>
+</div>
 
       </div>
 

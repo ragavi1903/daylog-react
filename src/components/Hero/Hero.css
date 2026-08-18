@@ -99,7 +99,7 @@ max-width:600px;
 
 letter-spacing:3px;
 
-color:#6B7280;
+color: var(--text-light);
 
 font-size:14px;
 
@@ -126,7 +126,7 @@ color:var(--primary);
 
 font-size:18px;
 
-color:#374151;
+ color: var(--text-light);
 
 }
 
@@ -157,7 +157,7 @@ color:var(--text-secondary);
 
 height:8px;
 
-background:#ddd;
+background: var(--border-color);
 
 border-radius:10px;
 
