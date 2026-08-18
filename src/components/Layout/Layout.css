@@ -220,31 +220,103 @@
 
 
 /* ---------- Mobile ---------- */
+/* =========================
+   MOBILE - LEFT SIDEBAR
+========================= */
 
 @media (max-width: 768px) {
 
   .sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
     width: 70px;
+    height: 100vh;
+
     padding: 20px 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #173126;
+
+    z-index: 1000;
+
+    overflow: hidden;
+  }
+
+  .sidebar .logo {
+    display: none;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+
+    gap: 8px;
+
+    flex: 1;
+
+    overflow: hidden;
+  }
+
+  .sidebar nav a {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px 8px;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+  }
+
+  .sidebar nav a svg {
+    font-size: 22px;
+    min-width: 22px;
+  }
+
+  .sidebar nav a span {
+    display: none;
+  }
+
+  .logout-btn {
+    width: 100%;
+    height: 45px;
+
+    margin-top: auto;
+
+    padding: 10px;
+
+    flex-shrink: 0;
+
+    font-size: 0;
+  }
+
+  .logout-btn svg {
+    font-size: 22px;
   }
 
   .main-content {
     margin-left: 70px;
     width: calc(100% - 70px);
-  }
 
-  .sidebar nav a {
-    padding: 14px;
-  }
-
-  .sidebar nav a svg {
-    font-size: 22px;
+    padding-bottom: 0;
   }
 }
 
+
 /* =========================
    SMALL MOBILE
-   480px and below
 ========================= */
 
 @media (max-width: 480px) {
@@ -264,7 +336,6 @@
   }
 
   .sidebar nav a {
-    justify-content: center;
     padding: 12px 6px;
   }
 
@@ -272,15 +343,14 @@
     font-size: 19px;
   }
 
-  .sidebar nav a span {
-    display: none;
-  }
-
   .logout-btn {
-    padding: 12px 6px;
+    width: 100%;
+    height: 42px;
+
+    padding: 10px 6px;
   }
 
-  .page-content {
-    padding: 15px;
+  .logout-btn svg {
+    font-size: 19px;
   }
 }

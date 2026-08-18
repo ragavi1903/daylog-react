@@ -102,3 +102,72 @@ cursor:pointer;
 font-size:16px;
 
 }
+/* =========================
+   MOBILE DIALOG
+========================= */
+
+@media (max-width: 768px) {
+
+    .dialog-overlay {
+        left: 70px;
+        right: 0;
+
+        padding: 15px;
+
+        box-sizing: border-box;
+    }
+
+    .dialog {
+        width: 100%;
+        max-width: 450px;
+
+        max-height: calc(100vh - 30px);
+
+        padding: 20px;
+
+        box-sizing: border-box;
+
+        overflow-y: auto;
+    }
+
+    .dialog-header {
+        margin-bottom: 18px;
+    }
+
+    .dialog-header h2 {
+        font-size: 22px;
+    }
+
+    .dialog label {
+        margin-top: 12px;
+    }
+
+    .dialog input,
+    .dialog select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .save-btn {
+        width: 100%;
+    }
+}
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+    .dialog-overlay {
+        left: 60px;
+        padding: 10px;
+    }
+
+    .dialog {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .dialog-header h2 {
+        font-size: 20px;
+    }
+}
